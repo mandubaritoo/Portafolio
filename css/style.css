@@ -5,10 +5,11 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #355c7d;
+  background-color: #5b4b8a;
   color: #f5f7fa;
   line-height: 1.6;
 }
+
 img {
   max-width: 100%;
   height: auto;
@@ -16,9 +17,9 @@ img {
 }
 
 header {
-  background-color: #111a2b;
+  background-color: #4a3c73;
   padding: 20px 0;
-  border-bottom: 2px solid #1f8f7a;
+  border-bottom: 2px solid #7dd3c7;
 }
 
 .contenedor {
@@ -53,7 +54,7 @@ header {
 }
 
 .menu a:hover {
-  color: #4fd1c5;
+  color: #7dd3c7;
 }
 
 .hero {
@@ -81,21 +82,22 @@ header {
 .hero-imagen img {
   max-width: 320px;
   border-radius: 12px;
-  border: 3px solid #1f8f7a;
+  border: 3px solid #7dd3c7;
 }
 
 .boton {
   display: inline-block;
   margin-top: 15px;
-  background-color: #1f8f7a;
-  color: white;
+  background-color: #7dd3c7;
+  color: #2f2547;
   padding: 10px 18px;
   text-decoration: none;
   border-radius: 6px;
+  font-weight: bold;
 }
 
 .boton:hover {
-  background-color: #166b5a;
+  background-color: #63bfb1;
 }
 
 .seccion {
@@ -103,7 +105,7 @@ header {
 }
 
 .fondo-suave {
-  background-color: #111a2b;
+  background-color: #4a3c73;
 }
 
 .tarjetas {
@@ -114,25 +116,25 @@ header {
 }
 
 .tarjeta {
-  background-color: #162033;
+  background-color: #6b5b95;
   padding: 20px;
   border-radius: 10px;
   flex: 1;
   min-width: 220px;
-  border: 1px solid #24324a;
+  border: 1px solid #8d7bb8;
 }
 
 .correo {
-  color: #4fd1c5;
+  color: #7dd3c7;
   text-decoration: none;
   font-weight: bold;
 }
 
 footer {
-  background-color: #09101c;
+  background-color: #3b2f5a;
   text-align: center;
   padding: 20px 0;
-  border-top: 1px solid #24324a;
+  border-top: 1px solid #8d7bb8;
 }
 
 @media (max-width: 768px) {
