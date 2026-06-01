@@ -1,1 +1,146 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0b1220;
+  color: #f5f7fa;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+header {
+  background-color: #111a2b;
+  padding: 20px 0;
+  border-bottom: 2px solid #1f8f7a;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu a {
+  color: #f5f7fa;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #4fd1c5;
+}
+
+.hero {
+  padding: 50px 0;
+}
+
+.hero-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.hero-texto {
+  flex: 1;
+  min-width: 260px;
+}
+
+.hero-imagen {
+  flex: 1;
+  min-width: 240px;
+}
+
+.hero-imagen img {
+  max-width: 320px;
+  border-radius: 12px;
+  border: 3px solid #1f8f7a;
+}
+
+.boton {
+  display: inline-block;
+  margin-top: 15px;
+  background-color: #1f8f7a;
+  color: white;
+  padding: 10px 18px;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.boton:hover {
+  background-color: #166b5a;
+}
+
+.seccion {
+  padding: 50px 0;
+}
+
+.fondo-suave {
+  background-color: #111a2b;
+}
+
+.tarjetas {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.tarjeta {
+  background-color: #162033;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+  min-width: 220px;
+  border: 1px solid #24324a;
+}
+
+.correo {
+  color: #4fd1c5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #09101c;
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #24324a;
+}
+
+@media (max-width: 768px) {
+  .encabezado,
+  .hero-contenido,
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
