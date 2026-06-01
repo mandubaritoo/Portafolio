@@ -1,161 +1,96 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Portafolio personal de José Luis Soria-Galvarro Porra, estudiante de Analista Programador en INACAP.">
-  <title>José Luis Soria-Galvarro Porra | Portafolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <title>Portafolio | José Luis Soria-Galvarro</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <div class="brand">
-        <span class="brand-mark">JS</span>
-        <div>
-          <p class="brand-name">José Luis Soria-Galvarro Porra</p>
-          <p class="brand-role">Portafolio académico</p>
-        </div>
-      </div>
-
-      <nav class="main-nav" aria-label="Navegación principal">
-        <ul>
+  <header>
+    <div class="contenedor encabezado">
+      <h1 class="logo">José Luis Soria-Galvarro Porra</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="#inicio">Inicio</a></li>
           <li><a href="#sobre-mi">Sobre mí</a></li>
-          <li><a href="#tecnologias">Tecnologías</a></li>
-          <li><a href="#proyeccion">Proyección</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main id="contenido">
-    <section class="hero section">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Estudiante de Analista Programador</p>
-          <h1>José Luis Soria-Galvarro Porra</h1>
-          <p class="hero-text">
-            Actualmente me encuentro en formación en desarrollo web, programación con Python
-            y bases de datos. Este portafolio será el espacio donde iré mostrando mi avance,
-            mis proyectos y mi crecimiento profesional.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#sobre-mi">Ver perfil</a>
-            <a class="btn btn-secondary" href="#contacto">Contacto</a>
-          </div>
-        </div>
-
-        <aside class="hero-card" aria-label="Resumen del perfil">
-          <p class="card-label">Resumen</p>
-          <ul class="profile-points">
-            <li>INACAP · Analista Programador</li>
-            <li>Frontend inicial con HTML y CSS</li>
-            <li>Python para fundamentos y POO</li>
-            <li>MySQL y MongoDB</li>
-          </ul>
-        </aside>
-      </div>
-    </section>
-
-    <section class="section" id="sobre-mi">
-      <div class="container section-block">
-        <div class="section-heading">
-          <p class="eyebrow">Presentación</p>
-          <h2>Sobre mí</h2>
-        </div>
-        <div class="content-card">
+  <main>
+    <section id="inicio" class="hero">
+      <div class="contenedor hero-contenido">
+        <div class="hero-texto">
+          <h2>Portafolio personal</h2>
           <p>
-            Soy estudiante de Analista Programador en INACAP y me encuentro construyendo una base sólida
-            en desarrollo web, programación y manejo de datos. He trabajado con HTML y CSS para interfaces,
-            Python para lógica y programación orientada a objetos, MySQL en bases de datos relacionales y
-            MongoDB en bases de datos no relacionales.
+            Soy estudiante de Analista Programador en INACAP. Esta landing es una primera versión
+            de mi portafolio, donde iré mostrando mis proyectos, habilidades y avance en programación.
           </p>
+          <a href="#sobre-mi" class="boton">Ver más</a>
+        </div>
+
+        <div class="hero-imagen">
+          <img src="img/perfil.png" alt="Foto de perfil de José Luis Soria-Galvarro">
         </div>
       </div>
     </section>
 
-    <section class="section section-alt" id="tecnologias">
-      <div class="container section-block">
-        <div class="section-heading">
-          <p class="eyebrow">Stack actual</p>
-          <h2>Tecnologías con las que he trabajado</h2>
-        </div>
+    <section id="sobre-mi" class="seccion">
+      <div class="contenedor">
+        <h2>Sobre mí</h2>
+        <p>
+          Actualmente estoy aprendiendo desarrollo web con HTML y CSS, programación con Python
+          y bases de datos como MySQL y MongoDB. Mi objetivo es seguir mejorando este portafolio
+          con nuevos proyectos y más funcionalidades.
+        </p>
+      </div>
+    </section>
 
-        <div class="cards-grid">
-          <article class="info-card">
-            <h3>Frontend</h3>
-            <p>HTML y CSS para estructura, maquetación y estilo visual de páginas web.</p>
+    <section id="habilidades" class="seccion fondo-suave">
+      <div class="contenedor">
+        <h2>Habilidades actuales</h2>
+
+        <div class="tarjetas">
+          <article class="tarjeta">
+            <h3>HTML y CSS</h3>
+            <p>Estructura de páginas, maquetación y diseño visual básico.</p>
           </article>
 
-          <article class="info-card">
-            <h3>Programación</h3>
-            <p>Python para introducción a la programación y programación orientada a objetos.</p>
+          <article class="tarjeta">
+            <h3>Python</h3>
+            <p>Fundamentos de programación y programación orientada a objetos.</p>
           </article>
 
-          <article class="info-card">
+          <article class="tarjeta">
             <h3>Bases de datos</h3>
-            <p>MySQL para bases de datos relacionales y MongoDB para bases de datos no relacionales.</p>
+            <p>Uso inicial de MySQL y MongoDB en proyectos académicos.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="proyeccion">
-      <div class="container section-block">
-        <div class="section-heading">
-          <p class="eyebrow">Siguiente etapa</p>
-          <h2>Proyección de este portafolio</h2>
-        </div>
-
-        <div class="cards-grid">
-          <article class="info-card muted-card">
-            <h3>Próximos proyectos</h3>
-            <p>Este espacio se utilizará para mostrar futuros trabajos académicos y personales.</p>
-          </article>
-
-          <article class="info-card muted-card">
-            <h3>JavaScript</h3>
-            <p>Más adelante esta landing incorporará interacción y componentes dinámicos con JavaScript.</p>
-          </article>
-
-          <article class="info-card muted-card">
-            <h3>Conexión a datos</h3>
-            <p>En futuras versiones se integrará conexión con bases de datos para dar mayor funcionalidad.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="contacto">
-      <div class="container section-block contact-block">
-        <div class="section-heading">
-          <p class="eyebrow">Contacto</p>
-          <h2>Medio de comunicación</h2>
-        </div>
-
-        <div class="content-card contact-card">
-          <p>
-            Por ahora, el medio de contacto disponible para este portafolio es mi correo institucional.
-          </p>
-          <a class="contact-mail" href="mailto:jose.soriagalvarro@inacapmail.cl">
-            jose.soriagalvarro@inacapmail.cl
-          </a>
-        </div>
+    <section id="contacto" class="seccion">
+      <div class="contenedor">
+        <h2>Contacto</h2>
+        <p>Puedes comunicarte conmigo a través de mi correo institucional:</p>
+        <a href="mailto:jose.soriagalvarro@inacapmail.cl" class="correo">
+          jose.soriagalvarro@inacapmail.cl
+        </a>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>© 2026 José Luis Soria-Galvarro Porra</p>
-      <p>Landing personal en construcción</p>
+  <footer>
+    <div class="contenedor">
+      <p>© 2026 José Luis Soria-Galvarro Porra | Portafolio académico</p>
     </div>
   </footer>
+
 </body>
 </html>
